@@ -1,0 +1,24 @@
+version: '3.5'
+services:
+
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    expose:
+      - 3306
+    ports:
+      - 3306
+    environment:
+      MYSQL_DATABASE: ManyManyDemo
+      MYSQL_PASSWORD: password
+      MYSQL_USER: admin
+      MYSQL_ROOT_PASSWORD: password
+    restart: always
+    volumes:
+      # To initialize the DB with a sql script
+      - ./create3.sql:/docker-entrypoint-initdb.d/db.sql
+        # To save data and changes made to the docker container
+        #      - ./data:/var/lib/mysql
+
+
