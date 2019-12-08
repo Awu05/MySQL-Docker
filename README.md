@@ -11,4 +11,4 @@ My first look at using MySQL in a Docker container.
 6) You will now be inside the MySQL DB in the docker container.
 
 # Things to Note
-You can edit the docker-compose file to how you want. i.e. change the user login information or connect more containers.
+You can edit the docker-compose.yaml file to how you want. i.e. change the user login information or connect more containers.
