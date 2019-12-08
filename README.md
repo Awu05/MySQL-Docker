@@ -10,5 +10,5 @@ My first look at using MySQL in a Docker container.
 5) Run `mysql -u admin -p` to log into the MySQL DB. It will prompt you for the password which is just `password`
 6) You will now be inside the MySQL DB in the docker container.
 
-##Things to Note
+#Things to Note
 You can edit the docker-compose file to how you want. i.e. change the user login information or connect more containers.
