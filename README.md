@@ -4,7 +4,7 @@ My first look at using MySQL in a Docker container.
 
 # Steps to use
 1) Clone repo and cd inside
-2) Run `docker-compose up -d` to start the docker container (Note: Docker must be installed)
+2) Run `docker-compose up -d` to start the docker container detached (Note: Docker must be installed)
 3) Run `docker container ls` to see all the running containers
 4) Run `docker container exex -it container_id bash` to make a connection to the containers commandline
 5) Run `mysql -u admin -p` to log into the MySQL DB. It will prompt you for the password which is just `password`
